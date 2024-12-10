@@ -1,12 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio Llanchid</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">
+            <img src="../src/img/icon_piwke.png" width="100" height="100" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Inicio </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Historia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Nosotros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contáctanos</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="wave-header">
+        <!-- Wave SVG -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#101010" fill-opacity="1" d="M0,256L48,256C96,256,192,256,288,224C384,192,480,128,576,117.3C672,107,768,149,864,176C960,203,1056,213,1152,197.3C1248,181,1344,139,1392,117.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </div>
+
+    <div class="content-llanchid container-fluid">
+        <video width="631" height="363" autoplay loop>
+            <source src="../src/video/llanchid recolor.mp4" type="video/mp4">
+        </video>
+        <div class="info-llanchid">
+        <h2>Isla Llanchid</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt porttitor orci, sit amet accumsan turpis ornare sit amet. Aenean magna velit, blandit id ligula quis, eleifend semper massa. Nulla elementum vitae sapien a consectetur. Morbi iaculis pharetra ornare. Mauris scelerisque non quam at congue. Donec vehicula accumsan ante non viverra. </p>
+        <button type="button" class="btn btn-primary">Primary</button>
+        </div>
+    </div>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OL9ZzXvj3PewtLWwlW+69wEQddR79MlQH/fDcvOdhuccTx2r5vuKo8SAsGkz4dvf" crossorigin="anonymous"></script>
     
 </body>
 </html>
