@@ -1,37 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
- --page-margin: 0px 80px 0px 80px;
+  --background-color: rgb(16,16,16);
+  --text-color: #ffffff;
+  --secondary-color: #d1aa61;
 }
 
 body {
-  background-color: #101010;
+  margin: 0;
+  background-color: var(--background-color);
+  font-family: Albert Sans;
+  color: var(--text-color);
 }
 
-.navbar{
-  margin: var(--page-margin);
+/* NAVBAR */
+.navbar {
+  padding: 10px 0; 
   z-index: 1;
-  align-content: center;
 }
 
-/* Wave Header + Divider*/
-.wave-header{
+.navbar-nav {
+  display: flex; 
+  gap: 15px;
+}
+
+.navbar-brand img {
+  margin-right: 15px; 
+}
+
+.nav-link {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #fff;
+  transition: color 0.3s ease;
+  text-transform: uppercase; 
+}
+
+.nav-link:hover {
+  color: #d1aa61; 
+}
+
+/* Wave Header + Divider */
+.wave-header {
   min-height: 100vh;
   width: 100%;
-  background-image:url(../src/img/landscape.jpg);
+  background-image: url(../src/img/landscape.jpg);
   position: relative;
   background-size: cover;
   top: -18vh;
   z-index: 0;
 }
 
-svg{
+svg {
   position: absolute;
   bottom: 0;
   left: 0;
 }
+/* WAVE-DIVIDER*/
+.wave-divider {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../src/img/jar.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.wave-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  top: -85px;
+  z-index: 0;
+}
+
+.wave-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  bottom: -80px;
+}
+
+/*CONTENT*/
 
 .content-llanchid {
-  margin: var(--page-margin);
   display: flex;
   align-items: center;
-  text-align: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.video-container {
+  flex: 1;
+  max-width: 631px;
+  margin-right: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+}
+
+.info-llanchid {
+  place-items: center;
+  flex: 1;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 1;
+}
+
+.info-llanchid h2 {
+  font-size: 2.5rem;
+  font-family: Bona Nova;
+}
+
+.info-llanchid p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.btn-custom {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background-color 0.3s ease;
+  align-self: center;
+}
+
+.btn-custom:hover {
+  background-color: #b8944e;
+}
+
+/**/
+
+.card {
+  border: none; /* Remove default card border */
+  border-radius: 10px; /* Smooth border radius */
+  overflow: hidden; /* Ensure content stays inside */
+}
+
+.card-img-top {
+  filter: brightness(90%); /* Slightly dim the images */
+  height: 200px; /* Adjust image height for uniformity */
+  object-fit: cover; /* Ensure images are cropped neatly */
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.container {
+  padding-top: 50px; /* Adjust to prevent overlap with header */
+}
+
+body {
+  background-color: #101010; /* Optional: dark theme background */
+  color: #ffffff;
+}
+
+/*FOOTER*/
+.footer{
+  color: #fff;
+}
+
+.footer a{
+  color: #fff !important;
 }
