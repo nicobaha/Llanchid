@@ -3,52 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <title>Productos Llanchid</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div id="header-placeholder"></div>
+  <div id="header-placeholder"></div>
 
-    <script>
-        // Cargar el header desde header.html
-        fetch('header.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('header-placeholder').innerHTML = data;
-            });
-    </script>
-    <div class="productos-container">
-        <header>
-            <h1>ISLA LLANCHID</h1>
-            <h2>Nuestros Productos</h2>
-            <p>Tradición y sabores únicos</p>
-        </header>
+  <script>
+      // Cargar el header desde header.html
+      fetch('header.html')
+          .then(response => response.text())
+          .then(data => {
+              document.getElementById('header-placeholder').innerHTML = data;
+          });
+  </script>
+    <header>
 
-        <div class="productos">
-            <div class="producto-card">
-                <img src="./images/pate chorito con merken.png" alt="Pate Chorito Tradicional">
-                <div class="producto-info">
-                    <h3>Pate Chorito Tradicional</h3>
-                    <span class="stock">EN STOCK</span>
-                    <p class="precio">$15.990</p>
-                    <a href="#" class="whatsapp-icon">🟢</a>
-                </div>
+        
+        <div class="wave-header">
+            <!-- Wave SVG -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#101010" fill-opacity="1" d="M0,256L48,256C96,256,192,256,288,224C384,192,480,128,576,117.3C672,107,768,149,864,176C960,203,1056,213,1152,197.3C1248,181,1344,139,1392,117.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+               
+            <div class="h1-galeria">
+              
+              <h1>Productos Llanchid</h1>
+              <p>Productos Naturales desde isla Llanchid a tu mesa.</p>
+             </div>
+        </div>
             </div>
-            <div class="producto-card">
-                <img src="./images/pate chorito con merken.png" alt="Pate Chorito Merkén">
-                <div class="producto-info">
-                    <h3>Pate Chorito Merkén</h3>
-                    <span class="stock">EN STOCK</span>
-                    <p class="precio">$15.990</p>
-                    <a href="#" class="whatsapp-icon">🟢</a>
-                </div>
+
+
+        </div>
+    </header>
+
+    <main>
+      <section class="productos d-flex flex-wrap justify-content-center gap-4 mt-4">
+        <div class="producto-card card border-0 shadow-sm" style="width: 18rem;">
+            <img src="./images/pate chorito tradicional.png" class="card-img-top" alt="Pate Chorito Tradicional con Merkén">
+            <div class="card-body text-center">
+                <h3 class="card-title fs-5">Paté Chorito Tradicional</h3>
+                <span class="badge bg-success">En stock</span>
+                <p class="precio mt-2 fs-4 text-primary">$15.990</p>
+                <a href="#" class="btn btn-outline-success" aria-label="Comprar en WhatsApp">🟢 Comprar</a>
             </div>
         </div>
-
-        <div class="pagination">
-            <span>⬅️</span>
-            <span>➡️</span>
+        <!-- Agrega más productos aquí -->
+        <div class="producto-card card border-0 shadow-sm" style="width: 18rem;">
+            <img src="./images/Pate choritos con merken.png" class="card-img-top" alt="Pate Chorito con Merkén">
+            <div class="card-body text-center">
+                <h3 class="card-title fs-5">Paté Chorito Merken 🌶️</h3>
+                <span class="badge bg-success">En stock</span>
+                <p class="precio mt-2 fs-4 text-primary">$15.990</p>
+                <a href="#" class="btn btn-outline-success" aria-label="Comprar en WhatsApp">🟢 Comprar</a>
+            </div>
         </div>
-    </div>
+    </section>
+
+        <section class="info">
+            <h2>Más sobre Isla Llanchid</h2>
+            <p>
+                Isla Llanchid es un lugar mágico donde la naturaleza y la historia se entrelazan.
+                Con paisajes impresionantes y una rica tradición cultural, ofrecemos a nuestros
+                visitantes una experiencia única para conectar con lo mejor de nuestra tierra.
+            </p>
+            <p>
+                Disfruta de caminatas, actividades al aire libre y aprende sobre la flora y fauna
+                autóctona. Ven y descubre por qué Parque Lafken es un destino imperdible.
+            </p>
+        </section>
+
+        <div id="modal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modal-img">
+            <div id="caption"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Isla Llanchid.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+     <!-- Bootstrap JavaScript -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OL9ZzXvj3PewtLWwlW+69wEQddR79MlQH/fDcvOdhuccTx2r5vuKo8SAsGkz4dvf" crossorigin="anonymous"></script>
+    
 </body>
 </html>
