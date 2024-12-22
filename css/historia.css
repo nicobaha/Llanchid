@@ -44,6 +44,7 @@ main {
     background-image: url(../assets/img/rocas.webp);
     background-size: cover;
     z-index: -1;
+    margin-bottom: 15vh;
   }
   
   .wave-top {
@@ -67,6 +68,8 @@ main {
     background-image: url(../assets/img/llanchid\(12\).webp);
   }
 
+
+
 /* TEXT */
 .text-llanchid{
     font-family: Albert Sans;
@@ -83,6 +86,10 @@ main {
 
 /* Espaciado entre textos y wave-dividers */
 .cont-text {
-    margin-top: 10vh;
-    margin-bottom: 10vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.text-two{
+  margin-bottom: 20vh;
 }
