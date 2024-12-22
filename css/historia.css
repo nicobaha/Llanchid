@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Bona+Nova:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+  --background-color: rgb(10,10,10);
+  --text-color: #ffffff;
+  --secondary-color: #d1aa61;
+  --third-color:#18395C;
+}
+
+body {
+    margin: 0;
+    background-color: var(--background-color);
+    font-family: Albert Sans;
+    color: var(--text-color);
+}
+header{
+    margin-bottom: -28vh;
+}
+main {
+    margin-top: 0;
+}
+/* Wave Header + Divider */
+.wave-header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(../assets/img/llanchid\(11\).webp);
+    position: relative;
+    background-size: cover;
+    top: -22.5vh;
+    z-index: -1;
+  }
+  
+  svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  /* WAVE-DIVIDER*/
+  .wave-divider {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../assets/img/rocas.webp);
+    background-size: cover;
+    z-index: -1;
+  }
+  
+  .wave-top {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: -85px;
+    z-index: -1;
+  }
+  
+  .wave-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    bottom: -80px;
+  }
+
+  .two-div{
+    background-image: url(../assets/img/llanchid\(12\).webp);
+  }
+
+/* TEXT */
+.text-llanchid{
+    font-family: Albert Sans;
+    text-align: justify;
+}
+
+.cont-text a{
+    color:var(--secondary-color) !important;
+    text-decoration: none;
+}
+.cont-text a:hover{
+    color:#6a5123 !important;
+}
+
+/* Espaciado entre textos y wave-dividers */
+.cont-text {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}

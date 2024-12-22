@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Bona+Nova:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+  --background-color: rgb(10,10,10);
+  --text-color: #ffffff;
+  --secondary-color: #d1aa61;
+  --third-color:#18395C;
+}
+
+footer{
+    background-color: var(--third-color);
+}
+
+footer .column{
+    display: flex;
+}
+
+footer .container{
+    justify-items: center;
+}
+
+footer .container h5{
+    font-family: Bona Nova;
+    color: var(--secondary-color);
+}
+
+footer .container li{
+    font-family: Albert Sans;
+}
+
+footer .container hr{
+    margin: auto;
+    color: var(--secondary-color);
+    border-top: solid 1px;
+    margin-bottom: 1rem;
+}
+
+.icons-bx{
+    text-align: center;
+    font-size: xx-large;
+}

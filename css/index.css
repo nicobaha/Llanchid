@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Bona+Nova:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+  --background-color: rgb(10,10,10);
+  --text-color: #ffffff;
+  --secondary-color: #d1aa61;
+  --third-color:#18395C;
+}
+
+body {
+    margin: 0;
+    background-color: var(--background-color);
+    font-family: Albert Sans;
+    color: var(--text-color);
+}
+
+header{
+    margin-bottom: -28vh;
+}
+
+/* video + text container */
+.cont-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  padding: 20px;
+}
+
+.title-llanchid {
+  font-family: 'Bona Nova', serif;
+  font-size: 2rem;
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.video-container {
+  width: 100%;
+  max-width: 631px;
+}
+
+.text-llanchid {
+  font-family: 'Albert Sans', sans-serif;
+  max-width: 600px;
+}
+
+.text-llanchid p {
+  margin-bottom: 20px;
+}
+
+.btn-a{
+  text-decoration: none;
+}
+
+.btn-custom {
+  display: flex;
+  background-color: var(--secondary-color);
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-family: 'Albert Sans', sans-serif;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-custom:hover {
+  background-color: #7d6334;
+}
+
+/* Responsive de video + text */
+@media (min-width: 768px) {
+  .cont-text {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .video-container, .text-llanchid {
+    width: 50%;
+  }
+
+  .text-llanchid {
+    text-align: justify;
+  }
+
+  .btn-custom {
+    margin: 0 auto;
+  }
+}
+
+/* Wave Header + Divider */
+.wave-header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(../assets/img/llanchid\(6\).webp);
+    position: relative;
+    background-size: cover;
+    top: -22.5vh;
+    z-index: -1;
+  }
+  
+  svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  /* WAVE-DIVIDER*/
+  .wave-divider {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../assets/img/llanchid\(5\).webp);
+    background-size: cover;
+    z-index: -1;
+  }
+  
+  .wave-top {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: -85px;
+    z-index: -1;
+  }
+  
+  .wave-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    bottom: -80px;
+  }
+
+  /*CARDS*/
+  .container-fluid {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card {
+    position: relative;
+    width: 350px !important;
+    height: 400px;
+    overflow: hidden;
+    border-width: 0 !important;
+  }
+  
+  .card-img-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(70%);
+  }
+  
+  .card-body {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+  }

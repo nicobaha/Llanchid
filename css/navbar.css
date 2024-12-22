@@ -1,0 +1,24 @@
+/* NAVBAR */
+.navbar {
+    z-index: 1;
+    background: linear-gradient(to bottom, #034866, rgba(34, 39, 42, 0)); /* Gradiente personalizado */
+    color: #fff; /* Asegura que el texto sea visible */
+    border: none; /* Opcional: elimina cualquier borde por defecto */
+}
+
+.navbar-nav {
+    display: flex; 
+    gap: 15px;
+}
+
+.nav-link {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+    transition: color 0.3s ease;
+    text-transform: uppercase; 
+}
+
+.nav-link:hover {
+    color: #00aaff; /* Color de texto al pasar el cursor */
+}
