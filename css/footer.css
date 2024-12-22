@@ -2,7 +2,7 @@
 
 :root {
   --background-color: rgb(10,10,10);
-  --text-color: #ffffff;
+  --text-color: #fefae0;
   --secondary-color: #d1aa61;
   --third-color:#18395C;
 }
@@ -38,4 +38,10 @@ footer .container hr{
 .icons-bx{
     text-align: center;
     font-size: xx-large;
+}
+
+
+ .nav-item a {
+    color:  var(--text-color) !important; /* Cambia el color del texto del enlace */
+    text-decoration: none; /* Opcional: elimina subrayado */
 }
