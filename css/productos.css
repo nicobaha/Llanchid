@@ -7,6 +7,10 @@ body {
     color: #fff;
   }
   
+  main {
+    margin-bottom: 5rem;
+  }
+
   .productos-container {
     text-align: center;
     padding: 2rem;
