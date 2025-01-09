@@ -70,27 +70,6 @@ header{
   background-color: #7d6334;
 }
 
-/* Responsive de video + text */
-@media (min-width: 768px) {
-  .cont-text {
-    flex-direction: row;
-    align-items: flex-start;
-    text-align: left;
-  }
-
-  .video-container, .text-llanchid {
-    width: 50%;
-  }
-
-  .text-llanchid {
-    text-align: justify;
-  }
-
-  .btn-custom {
-    margin: 0 auto;
-  }
-}
-
 /* Wave Header + Divider */
 .wave-header {
     min-height: 100vh;
@@ -118,13 +97,24 @@ header{
     z-index: -1;
   }
   
+  @media (max-width: 768px) {
+    .wave-divider {
+      display: none;
+    }
+  }
+  
   .wave-top {
     position: absolute;
     width: 100%;
     height: auto;
     top: -85px;
     z-index: -1;
+    
   }
+  @media (max-width: 768px) {
+    .wave-top {
+      display: none;
+    }
   
   .wave-bottom {
     position: absolute;
@@ -169,4 +159,4 @@ header{
     padding: 20px;
     color: rgb(255, 255, 255);
     text-align: center;
-  }
+  }}

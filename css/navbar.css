@@ -1,14 +1,6 @@
-/* NAVBAR */
+/* navbar.css */
 .navbar {
-    z-index: 1;
-    background: linear-gradient(to bottom, #034866, rgba(34, 39, 42, 0)); /* Gradiente personalizado */
-    color: #fff; /* Asegura que el texto sea visible */
-    border: none; /* Opcional: elimina cualquier borde por defecto */
-}
-
-.navbar-nav {
-    display: flex; 
-    gap: 15px;
+    background-color: #333;
 }
 
 .nav-link {
@@ -20,5 +12,15 @@
 }
 
 .nav-link:hover {
-    color: #00aaff; /* Color de texto al pasar el cursor */
+    color: #d1aa61; 
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 10px;
+    }
 }

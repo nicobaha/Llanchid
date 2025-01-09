@@ -1,14 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Bona+Nova:ital,wght@0,400;0,700;1,400&display=swap');
-
-:root {
-  --background-color: rgb(10,10,10);
-  --text-color: #ffffff;
-  --secondary-color: #d1aa61;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
 }
 
-body {
-    margin: 0;
-    background-color: var(--background-color);
-    font-family: Albert Sans;
-    color: var(--text-color);
+h1 {
+  color: #333;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  font-weight: bold;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
 }
